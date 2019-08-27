@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Main.aspx" title="Main">
+      <siteMapNode title="Registration and input"
+        url="~/WebForm1.aspx">        
+      </siteMapNode>
+      <siteMapNode title="Make an order"
+        description="Access only from clients">
+      </siteMapNode>      
+      <siteMapNode title="Edit client"
+        url="~/WebForm3.aspx">            
+      </siteMapNode>
+      <siteMapNode title="Edit auto"
+        url="~/WebForm4.aspx">               
+      </siteMapNode>
+      <siteMapNode title="Edit order"
+        url="~/WebForm5.aspx">              
+      </siteMapNode>
+      <siteMapNode title="Edit admin"
+        url="~/WebForm6.aspx">               
+      </siteMapNode>
+      <siteMapNode title="ContactUs"
+        url="~/ContactUs.aspx">              
+      </siteMapNode>       
+    </siteMapNode>
+</siteMap>
