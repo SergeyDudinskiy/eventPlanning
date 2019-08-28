@@ -42,7 +42,7 @@
         <br />
         <asp:TextBox ID="TextBox2" runat="server" Width="150px"></asp:TextBox>
         <br />
-        <asp:CheckBox ID="CheckBox1" runat="server" Text="Administrator" Width="150px" AutoPostBack="True" Height="21px" />
+        <asp:CheckBox ID="CheckBox1" runat="server" Text="Administrator" Width="150px" AutoPostBack="True" />
         <br />
         <br />    
         <asp:Button ID="Button1" runat="server" class="button" OnClick="Button1_Click" Text="Log in" Width="150px" />  

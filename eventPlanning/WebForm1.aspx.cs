@@ -61,7 +61,7 @@ namespace eventPlanning
             {
                 if (Requests.CheckDuplicate("SELECT [FirstName] FROM Client WHERE [LastName] = '" + TextBox2.Text + "'", TextBox1.Text) == false)
                 {
-                    int id = Convert.ToInt32(Requests.GetValue("SELECT MAX(Id) FROM Client")) + 1;
+                    int id = Convert.ToInt32(Requests.GetValue("SELECT MAX(Id) FROM [Client]")) + 1;
                     Requests.Request("INSERT INTO [Client] ([Id], [FirstName], [LastName], [DateOfBirth], [Address], [Phone], [Email]) VALUES ('" + id + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', '" + TextBox5.Text + "', '" + TextBox6.Text + "', '" + TextBox7.Text + "', '" + TextBox8.Text + "')");
                     Page.Session["role"] = 1;
                     Page.Session["adminOrUserName"] = TextBox3.Text;

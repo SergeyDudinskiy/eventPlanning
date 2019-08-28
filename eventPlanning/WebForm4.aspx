@@ -63,9 +63,8 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     </div>
-    </div>    
-        <div style="overflow: hidden;">
-            <div style="width: 100%;">
+    </div>            
+        <div style="width: 100%;">
         <br />        
         <div style="float: left; width: 300px; height: 200px;">
             <asp:Label ID="Label1" runat="server" BackColor="Yellow" Text="Delete auto"></asp:Label>
@@ -105,8 +104,7 @@
             <br />
             <br />
          </div>
-    </div>
-    </div>
+    </div>    
     </form>
 </body>
 </html>

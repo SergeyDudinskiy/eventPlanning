@@ -24,9 +24,9 @@
             <Columns>
                 <asp:CommandField ShowEditButton="True" />
                 <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" ReadOnly="True" />
-                <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
-                <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
-                <asp:BoundField DataField="DateOfBirth" HeaderText="DateOfBirth" SortExpression="DateOfBirth" />
+                <asp:BoundField DataField="FirstName" HeaderText="First Name" SortExpression="FirstName" />
+                <asp:BoundField DataField="LastName" HeaderText="Last Name" SortExpression="LastName" />
+                <asp:BoundField DataField="DateOfBirth" HeaderText="Date Of Birth" SortExpression="DateOfBirth" />
                 <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
                 <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
                 <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
@@ -72,25 +72,23 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     </div>
-    </div>    
-        <div style="overflow: hidden;">
-            <div style="width: 100%;">
+    </div>            
+        <div style="width: 100%;">
         <br />        
         <div style="float: left; width: 300px; height: 150px;">
             <asp:Label ID="Label1" runat="server" BackColor="Yellow" Text="Delete client"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox1" runat="server" Width="100px" ValidationGroup="Group1" TextMode="Number"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" Width="100px" TextMode="Number"></asp:TextBox>
             <asp:Label ID="Label2" runat="server" Text="Id"></asp:Label>
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" class="button" OnClick="Button1_Click" Text="OK" Width="100px" ValidationGroup="Group1" />         
+            <asp:Button ID="Button1" runat="server" class="button" OnClick="Button1_Click" Text="OK" Width="100px" />         
             <br />
             <br />
            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Main.aspx">Main</asp:HyperLink>
             <br />
          </div>           
-    </div>
-    </div>
+    </div>    
     </form>
 </body>
 </html>

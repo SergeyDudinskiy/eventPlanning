@@ -24,11 +24,11 @@
             <Columns>
                 <asp:CommandField ShowEditButton="True" />
                 <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" ReadOnly="True" />
-                <asp:BoundField DataField="IdAuto" HeaderText="IdAuto" SortExpression="IdAuto" />
-                <asp:BoundField DataField="IdClient" HeaderText="IdClient" SortExpression="IdClient" />
+                <asp:BoundField DataField="IdAuto" HeaderText="Id Auto" SortExpression="IdAuto" />
+                <asp:BoundField DataField="IdClient" HeaderText="Id Client" SortExpression="IdClient" />
                 <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
-                <asp:BoundField DataField="OrderAmount" HeaderText="OrderAmount" SortExpression="OrderAmount" />
-                <asp:BoundField DataField="OrderStatus" HeaderText="OrderStatus" SortExpression="OrderStatus" />
+                <asp:BoundField DataField="OrderAmount" HeaderText="Order Amount" SortExpression="OrderAmount" />
+                <asp:BoundField DataField="OrderStatus" HeaderText="Order Status" SortExpression="OrderStatus" />
             </Columns>
             <EditRowStyle BackColor="#7C6F57" />
             <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
@@ -92,29 +92,34 @@
            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Main.aspx">Main</asp:HyperLink>
             <br />
          </div>
-        <div style="float: left; width: 300px; height: 150px;">
+        <div style="float: left; width: 350px; height: 150px;">
             <asp:Label ID="Label4" runat="server" BackColor="Yellow" Text="Add order"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox2" runat="server" Width="100px" TextMode="Number"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" Width="130px" TextMode="Number"></asp:TextBox>
             <asp:Label ID="Label5" runat="server" Text="Id"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox3" runat="server" Width="100px" TextMode="Number"></asp:TextBox>
-            <asp:Label ID="Label6" runat="server" Text="IdAuto"></asp:Label>
+            <asp:TextBox ID="TextBox3" runat="server" Width="130px" TextMode="Number"></asp:TextBox>
+            <asp:Label ID="Label6" runat="server" Text="Id Auto"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox4" runat="server" Width="100px" TextMode="Number"></asp:TextBox>
-            <asp:Label ID="Label7" runat="server" Text="IdClient"></asp:Label>
+            <asp:TextBox ID="TextBox4" runat="server" Width="130px" TextMode="Number"></asp:TextBox>
+            <asp:Label ID="Label7" runat="server" Text="Id Client"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox5" runat="server" Width="100px" TextMode="Date"></asp:TextBox>
+            <asp:TextBox ID="TextBox5" runat="server" Width="130px" TextMode="Date"></asp:TextBox>
             <asp:Label ID="Label8" runat="server" Text="Date"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox6" runat="server" Width="100px" TextMode="Number"></asp:TextBox>
+            <asp:TextBox ID="TextBox6" runat="server" Width="130px" TextMode="Number" ></asp:TextBox>
             <asp:Label ID="Label9" runat="server" Text="Order Amount"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox7" runat="server" Width="100px"></asp:TextBox>
+            <asp:DropDownList ID="DropDownList1" runat="server" Width="130px">
+                <asp:ListItem>Completed</asp:ListItem>
+                <asp:ListItem>In Progress</asp:ListItem>
+                <asp:ListItem>Canceled</asp:ListItem>
+            </asp:DropDownList>
             <asp:Label ID="Label10" runat="server" Text="Order Status"></asp:Label>
             <br />
+            <asp:rangevalidator ID="Rangevalidator1" errormessage="Please enter value of orver amount between 0-10000." forecolor="Red" controltovalidate="TextBox6" minimumvalue="0" maximumvalue="10000" runat="server" Type="Integer"></asp:rangevalidator>
             <br />
-            <asp:Button ID="Button2" runat="server" class="button" OnClick="Button2_Click" Text="OK" Width="100px" />         
+            <asp:Button ID="Button2" runat="server" class="button" OnClick="Button2_Click" Text="OK" Width="130px" />         
             <br />
             <br />
             <br />

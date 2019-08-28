@@ -13,7 +13,7 @@ namespace eventPlanning
             }
             else
             {
-                Response.Write("<div><font color=red><h1>The only access to the administration!</h1></font></div>");
+                Response.Write("<div><font color=red><h1>Access only from clients!</h1></font></div>");
                 Response.End();
             }
         }
@@ -37,7 +37,7 @@ namespace eventPlanning
             }
             else
             {
-                Response.Write("Fill out all fields!");
+                Response.Write("Fill in all fields!");
             }
 
             TextBox1.Text = "";

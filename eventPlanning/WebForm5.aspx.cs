@@ -47,7 +47,7 @@ namespace eventPlanning
 
             if (Requests.CheckFields(values) == true)
             {
-                if (Requests.Request("INSERT INTO [Order] ([Id], [IdAuto], [IdClient], [Date], [OrderAmount], [OrderStatus]) VALUES ('" + TextBox2.Text + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', '" + TextBox5.Text + "', '"+ TextBox6.Text + "', '" + TextBox7.Text + "')") != "")
+                if (Requests.Request("INSERT INTO [Order] ([Id], [IdAuto], [IdClient], [Date], [OrderAmount], [OrderStatus]) VALUES ('" + TextBox2.Text + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', '" + TextBox5.Text + "', '"+ TextBox6.Text + "', '" + DropDownList1.SelectedValue + "')") != "")
                 {
                     Response.Write("Error!");
                 }
@@ -63,7 +63,7 @@ namespace eventPlanning
                 Response.Write("Fill in all fields!");
             }
 
-            TextBox2.Text = TextBox3.Text = TextBox4.Text = TextBox5.Text = TextBox6.Text = TextBox7.Text = "";
+            TextBox2.Text = TextBox3.Text = TextBox4.Text = TextBox5.Text = TextBox6.Text = "";
         }
     }
 }
